@@ -44,3 +44,27 @@ const myFunc = function() {
     console.log("Love you so PAGLI");
 }
 console.log(typeof myFunc) // -> Object function
+
+
+
+/* ------------------------------------------------- */
+
+// Stack -> used by Premitive DataTypes
+// Heap -> Non-Premitive DataTypes use it to get reference
+
+let ytChannel = "supersection"
+let anotherYTchannel = ytChannel // the value gets copied
+anotherYTchannel = "chaiaurcode"
+
+console.log(ytChannel);
+console.log(anotherYTchannel);
+
+let userOne = {
+    email: "user@gmail.com",
+    upi: "user@upi",
+}
+let userTwo = userOne // they are getting same reference (pointing to same object)
+userTwo.email = "user2@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
