@@ -51,7 +51,7 @@ wpUser.id = "123abc";
 wpUser.name = "soumo";
 wpUser.isLoggedIn = true;
 
-console.log(wpUser);
+// console.log(wpUser);
 
 const regularUser = {
   email: "0074gd",
@@ -70,18 +70,18 @@ const obj2 = { 3: "c", 4: "d" };
 const obj3 = { 5: "e", 6: "f" };
 
 const obj4 = { obj1, obj2 };
-console.log(obj4);
+// console.log(obj4);
 
 const obj5 = Object.assign(obj1, obj2); // all the values are getting stored in the first object
-console.log(obj5);
-console.log(obj1 === obj5); // true
+// console.log(obj5);
+// console.log(obj1 === obj5); // true
 
 const obj6 = Object.assign({}, obj1, obj3); // using empty object as the first argument to store all the values of other given objects
-console.log(obj6);
-console.log(obj6 == obj1); // false
+// console.log(obj6);
+// console.log(obj6 == obj1); // false
 
 const obj7 = {...obj2, ...obj3}
-console.log(obj7);
+// console.log(obj7);
 
 
 const users = [
@@ -96,8 +96,8 @@ const users = [
 ]
 
 const getEmail = users[1].email
-console.log(getEmail);
-
+// console.log(getEmail);
+/*
 console.log(Object.keys(wpUser));
 console.log(Object.values(wpUser));
 console.log(Object.entries(wpUser));
@@ -105,3 +105,34 @@ console.log(Object.entries(wpUser));
 
 console.log(wpUser.hasOwnProperty('isLoggedIn'));
 console.log(wpUser.hasOwnProperty('username'));
+*/
+
+
+/* ------------------------------------------------------------- */
+
+const course = {
+  coursename: "JavaScript hindi",
+  price: "999",
+  courseInstructor: "Hitesh"
+}
+
+// Object de-structuring
+const {courseInstructor: instructor} = course
+console.log(instructor);
+
+// The vast majority of APIs today are using the JavaScript Object Notation (JSON)
+// JSON is actually objects in JavaScript [commonly Object or it can also be array]
+/*
+{
+  "name": "soumo",
+  "coursename": "js mastery",
+  "price": "free"
+}
+
+[
+  {},
+  {},
+  {}
+]
+
+*/
